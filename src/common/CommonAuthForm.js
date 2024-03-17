@@ -153,6 +153,7 @@ const CommonAuthForm = ({ formType, setActiveTab, setToken }) => {
         {formType === "register"
           ? "Already have an account?"
           : "Don't have an account?"}{" "}
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a
           href="#"
           onClick={() => setActiveTab(formType === "register" ? 1 : 0)}
